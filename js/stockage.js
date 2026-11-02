@@ -4,7 +4,12 @@ if (localStorage.getItem(cle) === null) {
 localStorage.setItem(cle, JSON.stringify(JoueursInitials));
 }
 export function LireStockageJ() {
-return JSON.parse(localStorage.getItem(cle)) || [];
+  try {
+    return JSON.parse(localStorage.getItem(cle)) || [];
+  } catch {
+    localStorage.setItem(cle, JSON.stringify(JoueursInitials));
+    return JoueursInitials;
+  }
 }
 export function EnregistrerDansStockageJ(joueurs) {
 localStorage.setItem(cle, JSON.stringify(joueurs));

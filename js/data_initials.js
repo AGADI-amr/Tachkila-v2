@@ -1,6 +1,6 @@
 export const joueurs = [
-  { id: 1, name: "Hugo Lambert", post: "gardien", numero: 1, position: "GB", age: 31, statut: "enforme", capitaine: false },
-  { id: 2, name: "Yanis Bakkali", post: "gardien", numero: 16, position: "GB", age: 24, statut: "enforme", capitaine: false },
+  { id: 1, name: "Hugo Lambert", post: "gardien", numero: 1, position: null, age: 31, statut: "enforme", capitaine: false },
+  { id: 2, name: "Yanis Bakkali", post: "gardien", numero: 16, position: null, age: 24, statut: "enforme", capitaine: false },
 
   { id: 3, name: "Karim Benali", post: "defenseur", numero: 2, position: null, age: 28, statut: "enforme", capitaine: false },
   { id: 4, name: "Lucas Moreau", post: "defenseur", numero: 3, position: null, age: 33, statut: "blesse", capitaine: false },
