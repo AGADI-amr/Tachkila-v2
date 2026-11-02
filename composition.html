@@ -6,12 +6,12 @@
     <title>Tachkila Atlas FC</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="js/composition.js" defer></script>
+    <script type="module" src="/js/composition.js" defer></script>
 </head>
 <body class="bg-slate-800 text-gray-200">
-<header class="flex items-center justify-between px-4 py-4 bg-slate-800" >
+<header class="flex items-center justify-between px-4 py-4 bg-slate-800 border-b border-gray-600">
         <div class="flex items-center gap-3">
-        <img src="assets/football.png" alt="Football Icon" class="h-8 w-8 object-contain shrink-0"/>
+        <img src="assets/football.png" alt="Football Icon" class="h-8 w-8 object-contain shrink-0">
         <span class="font-bold text-lime-400 tracking-wide">Atlas FC</span>
         </div>
     <nav class="mx-auto flex items-center gap-4 font-semibold tracking-wider text-sm bg-slate-700 rounded-lg px-1 py-1 text-gray-200">
@@ -40,5 +40,101 @@
         </ul>
         </div>
     </header>
+      <div class="flex ">
+
+        <aside class=" bg-sky-950 h-screen overflow-y-auto w-[300px] shrink-0">
+        <div class="flex justify-between m-[10px] items-center">
+            <h3 class="text-white font-bold">Effectif</h3>
+            <div class="border-[1px] border-teal-900 bg-teal-950 text-white rounded-lg p-1.5 text-sm">
+              <span id="player-count">0</span><span> joueur(s)</span>
+            </div>
+        </div>
+        </aside>
+
+        <main class="flex justify-center items-center flex-1 bg-slate-900 p-8">
+            <section class="">
+                <div class="gb border-2 border-amber-400 border-dashed 
+                bg-slate-800 rounded-lg flex items-center justify-center gap-8">
+                <div class="text-center">
+                <p class="font-semibold text-base text-amber-400">GB</p>
+                <p class="text-sm text-gray-500">libre</p>
+                </div>
+              </div>
+
+                <div class="dc1 border-2 border-blue-600 border-dashed 
+                bg-slate-800 rounded-lg flex items-center justify-center gap-8">
+                <div class="text-center">
+                <p class="font-semibold text-base text-blue-600">DC</p>
+                <p class="text-sm text-gray-500">libre</p>
+                </div>
+              </div>
+
+                <div class="dc2 border-2 border-blue-600 border-dashed 
+                bg-slate-800 rounded-lg flex items-center justify-center gap-8">
+                <div class="text-center">
+                <p class="font-semibold text-base text-blue-600">DC</p>
+                <p class="text-sm text-gray-500">libre</p>
+                </div>
+              </div>
+              <div class="dg border-2 border-blue-600 border-dashed 
+                bg-slate-800 rounded-lg flex items-center justify-center gap-8">
+                <div class="text-center">
+                <p class="font-semibold text-base text-blue-600">DG</p>
+                <p class="text-sm text-gray-500">libre</p>
+                </div>
+              </div>
+              <div class="dd border-2 border-blue-600 border-dashed 
+                bg-slate-800 rounded-lg flex items-center justify-center gap-8">
+                <div class="text-center">
+                <p class="font-semibold text-base text-blue-600">DD</p>
+                <p class="text-sm text-gray-500">libre</p>
+                </div>
+              </div>
+              <div class="mg border-2 border-green-600 border-dashed 
+                bg-slate-800 rounded-lg flex items-center justify-center gap-8">
+                <div class="text-center">
+                <p class="font-semibold text-base text-green-600">MG</p>
+                <p class="text-sm text-gray-500">libre</p>
+                </div>
+              </div>
+              <div class="mc1 border-2 border-green-600 border-dashed 
+                bg-slate-800 rounded-lg flex items-center justify-center gap-8">
+                <div class="text-center">
+                <p class="font-semibold text-base text-green-600">MC</p>
+                <p class="text-sm text-gray-500">libre</p>
+                </div>
+              </div>
+              <div class="mc2 border-2 border-green-600 border-dashed 
+                bg-slate-800 rounded-lg flex items-center justify-center gap-8">
+                <div class="text-center">
+                <p class="font-semibold text-base text-green-600">MC</p>
+                <p class="text-sm text-gray-500">libre</p>
+                </div>
+              </div>
+              <div class="md border-2 border-green-600 border-dashed 
+                bg-slate-800 rounded-lg flex items-center justify-center gap-8">
+                <div class="text-center">
+                <p class="font-semibold text-base text-green-600">MD</p>
+                <p class="text-sm text-gray-500">libre</p>
+                </div>
+              </div>
+              <div class="bu1 border-2 border-red-600 border-dashed 
+                bg-slate-800 rounded-lg flex items-center justify-center gap-8">
+                <div class="text-center">
+                <p class="font-semibold text-base text-red-600">BU</p>
+                <p class="text-sm text-gray-500">libre</p>
+                </div>
+              </div>
+              <div class="bu2 border-2 border-red-600 border-dashed 
+                bg-slate-800 rounded-lg flex items-center justify-center gap-8">
+                <div class="text-center">
+                <p class="font-semibold text-base text-red-600">BU</p>
+                <p class="text-sm text-gray-500">libre</p>
+                </div>
+              </div>
+            </section>
+            <p id="success-msg" class="fixed bottom-4 right-4 z-50 text-white bg-green-600 rounded-lg px-4 py-2 hidden"></p>
+        </main>
+    </div>
 </body>
 </html>
