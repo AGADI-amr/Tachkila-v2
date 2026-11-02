@@ -126,7 +126,7 @@ asideContainer.addEventListener("change", function (event) {
    target_P.textContent=player;
    target_P.classList.add("text-white")
    stockage.EnregistrerDansStockageJ(data)
-   } 
+   }
    else { 
       // selection_err.textContent="cette position est deja occupee"
       // setTimeout(() => selection_err.textContent = "", 3000);
