@@ -1,12 +1,13 @@
 import * as stockage from "./stockage.js";
 
 export function Generer_Terrain(field) {
-
+console.log("test")
  for (let i = 0 ; i < 82 ; i++) {
     const newDiv = document.createElement("div");
     newDiv.classList.add("grid-square") ;
     field.appendChild(newDiv);
  }
+    console.log("test")
 }
 export function affJoueursSurAside(asideContainer,playerCounter,data) {
    asideContainer.querySelectorAll(".player-card").forEach(card => card.remove());

@@ -1,0 +1,1 @@
+import * as Stockage from './stockage.js';

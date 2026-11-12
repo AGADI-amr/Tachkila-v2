@@ -3,7 +3,7 @@ import * as stockage from './stockage.js';
 
 const field = document.querySelector("section");
 Terrain.Generer_Terrain(field);
-
+console.log(field)
 let data = stockage.LireStockageJ();
 
 const asideContainer = document.querySelector("aside");
