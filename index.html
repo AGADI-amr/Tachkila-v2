@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tachkila Atlas FC</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="js/effectif.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/effectif.js" defer></script>
 </head>
 <body class="bg-slate-900 text-gray-200">
 <header class="flex items-center justify-between px-4 py-4 bg-slate-900 border-b border-gray-600">
@@ -43,9 +49,35 @@
       <section class="flex justify-between items-center">
         <div>
         <h1 class="text-white font-semibold text-3xl my-2">Effectif</h1>
-        <p>Gerez les joueurs du club Atlas</p>
+        <p class="text-gray-400 font-medium">Gerez les joueurs du club Atlas FC</p>
         </div>
+        <button type="button" class="rounded-lg text-white text-sm font-semibold 
+        h-10 w-[200px] bg-green-600 mr-6 mt-8"> + Ajouter un joueur</button>
       </section>
+        <nav class="bg-slate-800 rounded-lg w-[98%] h-16 mt-10 flex items-center justify-between gap-3">
+          <input type="text" name="searchBar" id="searchBar" placeholder="Rechercher un joueur par nom..."
+          class="bg-slate-900 ml-4 py-2 px-4 border border-gray-600 outline-none rounded-lg w-[76%] text-sm">
+          <div id="filter-buttons" class="bg-slate-900 rounded-lg text-xs flex gap-1 text-gray-300 font-semibold mr-4">
+
+            <button type="button" class="m-1 py-1 px-2 hover:bg-slate-600 rounded-md focus:bg-green-600 outline-none">
+              Tous
+            </button>
+            <button type="button" class="m-1 py-1 px-2 hover:bg-slate-600 rounded-md focus:bg-green-600 outline-none">
+              GB
+            </button>
+            <button type="button" class="m-1 py-1 px-2 hover:bg-slate-600 rounded-md focus:bg-green-600 outline-none">
+              DEF
+            </button>
+            <button type="button" class="m-1 py-1 px-2 hover:bg-slate-600 rounded-md focus:bg-green-600 outline-none">
+              MIL
+            </button>
+            <button type="button" class="m-1 mr-2 py-1 px-2 hover:bg-slate-600 rounded-md focus:bg-green-600 outline-none">
+              ATT
+            </button>
+          </div>
+        </nav>
+        <section id="joueurs-grid" class="my-6 mr-6">
+        </section>
     </main>
 </body>
 </html>
